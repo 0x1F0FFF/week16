@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #333333;
+    --primary-light: #fff4e6;
+    --muted-grey: #BC8D8D;
+    --heading-font: "Playfair Display", serif;
+    --body-font: "Roboto", sans-serif;
+    --link-fonts: "Quicksand", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--primary-light);
+    font-family: var(--body-font);
+    color: var(--primary-color);
+    padding: 2rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 60%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    width: 100%;
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    font-weight: 900;
+    font-size: 2.6rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: 2.3rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h3 {
+    font-family: var(--heading-font);
+    font-weight: 400;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    /*text-align: center;*/
+}
+
+p {
+    font-family: var(--body-font);
+}
+
+.general_information {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 16px;
+    align-self: start;
+}
+
+.info-img {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.info-text {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 5px;
+    align-self: start;
+}
+
+.info-section ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.info-section li {
+    font-size: 1.2rem;
+    margin: 2rem auto;
+}
+
+.experience {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.qualifications {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.info-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.info-text {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.experience, .qualification {
+    display: grid;
+    gap: 1rem;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    align-items: center;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    position: relative;
+    gap: 1rem;
+}
+
+.social-media, .copyright, .up-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .social-media-list {
+    list-style: none;
+}
+
+.social-media-list {
+    list-style: none;
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+}
+
+.social-media-list i {
+    font-size: 5rem;
+    padding: 0.5rem;
+}
+
+.up-button {
+    bottom: 2rem;
+    right: 2rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+    padding: 0.5rem;
+}
+
+.up-button:hover {
+    background-color: #333;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .general_information {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .info-img {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .info-text {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .info-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .experience {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .qualifications {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .social-media-list {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .up-button {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .copyright {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

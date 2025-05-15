@@ -1,0 +1,15 @@
+{
+    "profile_name": "Morten Ehari",
+    "fName": "Morten",
+    "lName": "Ehari",
+    "age": 28,
+    "phone": "+372 1234 5678",
+    "email": "super@duper.com",
+    "address": "Tartu, Estonia",
+    "edu": "TTK UAS",
+    "skills": [
+        "CAD",
+        "CAM",
+        "CAE"
+    ]
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Morten Ehari</title>
+        <script src="https://kit.fontawesome.com/ebfde3c0f4.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1><%= profile.profile_name %></h1>
+            </header>
+            <main>
+                <h2>General Information</h2>
+                <div class="general_information">
+                    <div class="info-img">
+                        <img src="images/1.jpg" alt="Potree pilt"></img>
+                    </div>
+                    <div class="info-text">
+                        <h3>Contact</h3>
+                        <p>First name: <%= profile.fName %></p>
+                        <p>Last name: <%= profile.lName %></p>
+                        <p>Age: <%= profile.age %></p>
+                        <p>Phone: <%= profile.phone %></p>
+                        <p>Email: <%= profile.email %></p>
+                        <p>Address: <%= profile.address %></p>
+                        <p>Education: <%= profile.edu %></p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="info-section">
+                    <div class="experience">
+                        <h3>Work Experience</h3>
+                        <ul class="job">
+                            <li>Job 1 - 2020 - 2025</li>
+                            <li>Lorem Ipsum ei ole ainult viis sajandit säilinud, vaid on ka edasi kandunud elektroonilisse trükiladumisse, jäädes sealjuures peaaegu muutumatuks.</li>
+                            <li>Job 2 - 2018 - 2020</li>
+                            <li>Lorem Ipsum ei ole ainult viis sajandit säilinud, vaid on ka edasi kandunud elektroonilisse trükiladumisse, jäädes sealjuures peaaegu muutumatuks.</li>
+                            <li>Job 3 - 2015 - 2018</li>
+                            <li>Lorem Ipsum ei ole ainult viis sajandit säilinud, vaid on ka edasi kandunud elektroonilisse trükiladumisse, jäädes sealjuures peaaegu muutumatuks.</li>
+                        </ul>
+                    </div>
+
+                    <div class="qualifications">
+                        <h3>Qualifications</h3>
+                        <ul class="training">
+                            <li>Training 1 - 2023</li>
+                            <li>Lorem Ipsum ei ole ainult viis sajandit säilinud, vaid on ka edasi kandunud elektroonilisse trükiladumisse, jäädes sealjuures peaaegu muutumatuks.</li>
+                            <li>Training 2 - 2022</li>
+                            <li>Lorem Ipsum ei ole ainult viis sajandit säilinud, vaid on ka edasi kandunud elektroonilisse trükiladumisse, jäädes sealjuures peaaegu muutumatuks.</li>
+                            <li>Training 3 - 2022</li>
+                            <li>Lorem Ipsum ei ole ainult viis sajandit säilinud, vaid on ka edasi kandunud elektroonilisse trükiladumisse, jäädes sealjuures peaaegu muutumatuks.</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </main>
+            <footer>
+                <div class="social-media">
+                    <ul class="social-media-list">
+                        <li>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <span id="copyright">2025 &copy;</span>
+                </div>
+                <div class="up-button">
+                    <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+                </div>
+            </footer>
+
+            <script src="app.js"></script>
+            <script src="profile.js"></script>
+        </div>
+    </body>
+</html>
